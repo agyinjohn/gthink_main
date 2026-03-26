@@ -19,25 +19,3 @@ window.addEventListener('scroll', () => {
     a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--gold)' : '';
   });
 });
-
-// Team modal
-const modal = document.getElementById('team-modal');
-const openBtn = document.getElementById('team-trigger');
-const closeBtn = document.getElementById('modal-close');
-
-function openModal(e) {
-  e.preventDefault();
-  modal.classList.add('open');
-  modal.setAttribute('aria-hidden', 'false');
-  document.body.style.overflow = 'hidden';
-}
-function closeModal() {
-  modal.classList.remove('open');
-  modal.setAttribute('aria-hidden', 'true');
-  document.body.style.overflow = '';
-}
-
-openBtn.addEventListener('click', openModal);
-closeBtn.addEventListener('click', closeModal);
-modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
-document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
