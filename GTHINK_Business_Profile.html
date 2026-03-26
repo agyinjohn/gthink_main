@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GTHINK Company Limited — Business Profile</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:   #0a1628;
+  --navy2:  #0f2040;
+  --blue:   #1a3a6b;
+  --accent: #2a7de1;
+  --gold:   #e8a020;
+  --gold2:  #f5c050;
+  --light:  #f4f7fc;
+  --white:  #ffffff;
+  --text:   #1e2d45;
+  --muted:  #6b7f9e;
+  --border: rgba(42,125,225,0.15);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+
+body{
+  font-family:'Outfit',sans-serif;
+  background:var(--navy);
+  color:var(--text);
+  overflow-x:hidden;
+}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 48px;height:62px;
+  background:rgba(10,22,40,0.95);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(42,125,225,0.18);
+}
+.nav-logo{display:flex;align-items:center;gap:10px;}
+.nav-mark{
+  width:34px;height:34px;background:linear-gradient(135deg,var(--accent),var(--blue));
+  border-radius:8px;display:flex;align-items:center;justify-content:center;
+  font-family:'Fraunces',serif;font-weight:700;font-size:14px;color:#fff;
+}
+.nav-name{font-family:'Fraunces',serif;font-weight:600;font-size:1.1rem;color:#fff;letter-spacing:0.02em;}
+.nav-name span{color:var(--gold);}
+.nav-links{display:flex;gap:28px;list-style:none;}
+.nav-links a{
+  color:rgba(255,255,255,0.65);text-decoration:none;
+  font-size:0.82rem;font-weight:500;letter-spacing:0.06em;
+  text-transform:uppercase;transition:color 0.2s;
+}
+.nav-links a:hover{color:var(--gold);}
+.nav-cta{
+  background:var(--accent);color:#fff;padding:8px 20px;
+  border-radius:6px;font-size:0.82rem;font-weight:600;
+  text-decoration:none;transition:all 0.2s;letter-spacing:0.03em;
+}
+.nav-cta:hover{background:#1e6fd0;transform:translateY(-1px);}
+@media(max-width:768px){.nav-links{display:none;}.nav-cta{display:none;} nav{padding:0 20px;}}
+
+/* ── HERO ── */
+.hero{
+  min-height:100vh;
+  background:var(--navy);
+  display:flex;align-items:center;
+  position:relative;overflow:hidden;
+  padding:80px 0 60px;
+}
+.hero-grid{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(42,125,225,0.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(42,125,225,0.05) 1px,transparent 1px);
+  background-size:52px 52px;
+}
+.hero-blob1{
+  position:absolute;top:-80px;right:-80px;
+  width:550px;height:550px;border-radius:50%;
+  background:radial-gradient(circle,rgba(42,125,225,0.15) 0%,transparent 70%);
+  animation:breathe 7s ease-in-out infinite;
+}
+.hero-blob2{
+  position:absolute;bottom:-100px;left:-60px;
+  width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle,rgba(232,160,32,0.08) 0%,transparent 70%);
+  animation:breathe 9s ease-in-out infinite reverse;
+}
+@keyframes breathe{0%,100%{transform:scale(1);}50%{transform:scale(1.06);}}
+
+.hero-inner{
+  position:relative;z-index:2;
+  max-width:1140px;margin:0 auto;padding:0 52px;
+  display:grid;grid-template-columns:1.1fr 0.9fr;gap:72px;align-items:center;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(42,125,225,0.12);border:1px solid rgba(42,125,225,0.28);
+  color:#7ab8f5;font-size:0.75rem;font-weight:600;
+  letter-spacing:0.1em;text-transform:uppercase;
+  padding:6px 14px;border-radius:20px;margin-bottom:22px;
+}
+.hero-eyebrow::before{
+  content:'';width:6px;height:6px;
+  background:var(--accent);border-radius:50%;
+  animation:blink 2s infinite;
+}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:0.3;}}
+
+.hero h1{
+  font-family:'Fraunces',serif;
+  font-size:clamp(2.6rem,4.5vw,3.8rem);
+  font-weight:700;line-height:1.08;
+  color:#fff;margin-bottom:10px;
+}
+.hero h1 em{font-style:italic;color:var(--gold);}
+.hero-tagline{
+  font-size:1rem;color:rgba(255,255,255,0.6);
+  line-height:1.75;margin-bottom:30px;font-weight:300;max-width:520px;
+}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px;}
+.btn-gold{
+  background:var(--gold);color:var(--navy);
+  padding:13px 28px;border-radius:7px;font-weight:700;
+  font-size:0.9rem;text-decoration:none;transition:all 0.2s;
+  letter-spacing:0.02em;
+}
+.btn-gold:hover{background:var(--gold2);transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,160,32,0.3);}
+.btn-ghost{
+  background:transparent;color:#fff;
+  padding:13px 28px;border-radius:7px;font-weight:500;
+  font-size:0.9rem;text-decoration:none;
+  border:1px solid rgba(255,255,255,0.22);transition:all 0.2s;
+}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.stat-box{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:12px;padding:22px 16px;text-align:center;
+  transition:all 0.3s;
+}
+.stat-box:hover{border-color:rgba(42,125,225,0.4);transform:translateY(-3px);}
+.stat-box .num{
+  font-family:'Fraunces',serif;font-size:2rem;font-weight:700;
+  color:var(--gold);display:block;
+}
+.stat-box .lbl{color:rgba(255,255,255,0.5);font-size:0.78rem;text-transform:uppercase;letter-spacing:0.06em;margin-top:4px;}
+
+.hero-tagrow{
+  grid-column:1/-1;
+  display:flex;gap:10px;flex-wrap:wrap;
+  padding-top:28px;margin-top:10px;
+  border-top:1px solid rgba(255,255,255,0.07);
+}
+.tag{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  color:rgba(255,255,255,0.5);font-size:0.72rem;
+  padding:5px 12px;border-radius:4px;
+  text-transform:uppercase;letter-spacing:0.06em;
+}
+
+/* ── SECTIONS ── */
+section{padding:96px 0;}
+.container{max-width:1140px;margin:0 auto;padding:0 52px;}
+@media(max-width:768px){.container{padding:0 20px;}section{padding:64px 0;}}
+
+.sec-label{
+  font-size:0.73rem;font-weight:700;text-transform:uppercase;
+  letter-spacing:0.12em;color:var(--accent);margin-bottom:10px;
+}
+.sec-label.gold{color:var(--gold);}
+.sec-title{
+  font-family:'Fraunces',serif;
+  font-size:clamp(1.9rem,3vw,2.5rem);
+  font-weight:700;line-height:1.18;
+  color:var(--navy);margin-bottom:14px;
+}
+.sec-title.white{color:#fff;}
+.sec-sub{color:var(--muted);font-size:1rem;line-height:1.7;max-width:580px;font-weight:300;}
+.sec-header{margin-bottom:52px;}
+
+/* ── ABOUT ── */
+#about{background:#fff;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+.about-text p{color:var(--muted);line-height:1.8;font-size:0.97rem;margin-bottom:18px;}
+.vmc-cards{display:flex;flex-direction:column;gap:16px;}
+.vmc-card{
+  background:var(--light);border:1px solid var(--border);
+  border-radius:12px;padding:22px 24px;
+  border-left:4px solid var(--accent);transition:all 0.25s;
+}
+.vmc-card:nth-child(2){border-left-color:var(--gold);}
+.vmc-card:nth-child(3){border-left-color:var(--navy);}
+.vmc-card:hover{transform:translateX(4px);box-shadow:0 4px 20px rgba(42,125,225,0.08);}
+.vmc-card h3{font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);margin-bottom:8px;}
+.vmc-card:nth-child(2) h3{color:var(--gold);}
+.vmc-card:nth-child(3) h3{color:var(--navy);}
+.vmc-card p{color:var(--muted);font-size:0.92rem;line-height:1.65;font-weight:300;}
+
+/* ── VALUES ── */
+#values{background:var(--light);}
+.values-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;}
+.value-card{
+  background:#fff;border:1px solid var(--border);
+  border-radius:14px;padding:28px 24px;
+  position:relative;overflow:hidden;transition:all 0.3s;
+}
+.value-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--accent),var(--gold));
+  transform:scaleX(0);transform-origin:left;transition:transform 0.3s;
+}
+.value-card:hover::before{transform:scaleX(1);}
+.value-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(42,125,225,0.1);}
+.value-num{
+  font-family:'Fraunces',serif;font-size:2.4rem;font-weight:700;
+  color:rgba(42,125,225,0.12);line-height:1;margin-bottom:12px;
+}
+.value-card p{color:var(--text);font-size:0.92rem;line-height:1.65;font-weight:400;}
+
+/* ── SERVICES ── */
+#services{background:#fff;}
+.svc-category{margin-bottom:56px;}
+.svc-category:last-child{margin-bottom:0;}
+.svc-cat-header{
+  display:flex;align-items:center;gap:14px;margin-bottom:24px;
+  padding-bottom:16px;border-bottom:1px solid var(--border);
+}
+.svc-cat-icon{
+  width:44px;height:44px;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.4rem;flex-shrink:0;
+}
+.svc-cat-title{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:600;color:var(--navy);}
+.svc-cat-sub{font-size:0.85rem;color:var(--muted);margin-top:2px;}
+.svc-items{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;}
+.svc-item{
+  background:var(--light);border:1px solid var(--border);
+  border-radius:9px;padding:14px 16px;
+  display:flex;align-items:flex-start;gap:10px;
+  font-size:0.88rem;color:var(--text);line-height:1.5;
+  transition:all 0.2s;
+}
+.svc-item:hover{border-color:var(--accent);background:#fff;transform:translateY(-2px);}
+.svc-item::before{content:'→';color:var(--accent);font-weight:700;flex-shrink:0;margin-top:1px;}
+
+/* IT Solutions special layout */
+.it-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;}
+.it-item{
+  background:var(--navy);border:1px solid rgba(42,125,225,0.2);
+  border-radius:9px;padding:14px 16px;
+  font-size:0.86rem;color:rgba(255,255,255,0.85);line-height:1.5;
+  display:flex;align-items:flex-start;gap:8px;transition:all 0.2s;
+}
+.it-item:hover{border-color:var(--accent);background:var(--navy2);}
+.it-item::before{content:'◆';color:var(--gold);font-size:0.6rem;margin-top:4px;flex-shrink:0;}
+
+/* ── INNOVATIONS ── */
+#innovations{background:var(--navy);}
+.innov-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;}
+.innov-card{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:14px;padding:28px 24px;
+  transition:all 0.3s;
+}
+.innov-card:hover{background:rgba(255,255,255,0.07);border-color:rgba(42,125,225,0.35);transform:translateY(-4px);}
+.innov-card h3{font-family:'Fraunces',serif;font-size:1.05rem;font-weight:600;color:#fff;margin-bottom:8px;}
+.innov-card p{color:rgba(255,255,255,0.55);font-size:0.87rem;line-height:1.65;}
+
+/* ── WHY GTHINK ── */
+#why{background:var(--light);}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+.why-card{
+  background:#fff;border:1px solid var(--border);
+  border-radius:14px;padding:30px 28px;
+  display:flex;gap:20px;align-items:flex-start;
+  transition:all 0.3s;
+}
+.why-card:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 8px 28px rgba(42,125,225,0.08);}
+.why-num{
+  font-family:'Fraunces',serif;font-size:2.2rem;font-weight:700;
+  color:rgba(42,125,225,0.14);line-height:1;flex-shrink:0;
+}
+.why-card h4{font-family:'Fraunces',serif;font-size:1.05rem;font-weight:600;color:var(--navy);margin-bottom:8px;}
+.why-card p{color:var(--muted);font-size:0.91rem;line-height:1.68;font-weight:300;}
+
+/* ── CONTACT ── */
+#contact{background:var(--navy);padding:96px 0 60px;}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-bottom:56px;}
+.contact-info h3{
+  font-family:'Fraunces',serif;font-size:1.1rem;font-weight:600;
+  color:var(--gold);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:24px;
+}
+.contact-row{
+  display:flex;gap:14px;padding:14px 0;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+.c-icon{
+  width:34px;height:34px;border-radius:7px;
+  background:rgba(42,125,225,0.18);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.9rem;
+}
+.contact-row .label{color:rgba(255,255,255,0.4);font-size:0.72rem;text-transform:uppercase;letter-spacing:0.06em;display:block;margin-bottom:3px;}
+.contact-row a, .contact-row strong{color:rgba(255,255,255,0.9);font-size:0.9rem;text-decoration:none;font-weight:400;}
+.contact-row a:hover{color:var(--gold);}
+
+.ceo-box{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:16px;padding:36px;
+  border-top:3px solid var(--gold);
+}
+.ceo-box h3{font-family:'Fraunces',serif;font-size:1.4rem;font-weight:700;color:#fff;margin-bottom:8px;}
+.ceo-box .role{color:rgba(255,255,255,0.5);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:20px;}
+.ceo-box p{color:rgba(255,255,255,0.55);font-size:0.9rem;line-height:1.7;margin-bottom:24px;font-weight:300;}
+.ceo-btns{display:flex;gap:12px;flex-wrap:wrap;}
+
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,0.07);
+  padding-top:28px;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;
+}
+.footer-bottom p{color:rgba(255,255,255,0.3);font-size:0.8rem;}
+.footer-tags{display:flex;gap:8px;flex-wrap:wrap;}
+.footer-tag{
+  color:rgba(255,255,255,0.25);font-size:0.7rem;
+  background:rgba(255,255,255,0.05);padding:3px 10px;
+  border-radius:4px;text-transform:uppercase;letter-spacing:0.06em;
+}
+
+/* ── ANIMATIONS ── */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.6s ease,transform 0.6s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .hero-inner,.about-grid,.contact-grid,.why-grid{grid-template-columns:1fr;gap:36px;}
+  .hero-stats{grid-template-columns:repeat(3,1fr);}
+}
+@media(max-width:560px){
+  .hero-stats{grid-template-columns:1fr 1fr;}
+  .why-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <div class="nav-mark">G</div>
+    <div class="nav-name">G<span>THINK</span> <span style="color:rgba(255,255,255,0.3);font-weight:300;font-size:0.85rem;margin-left:4px">Company Limited</span></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#values">Values</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Get in Touch</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-blob1"></div>
+  <div class="hero-blob2"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">Est. 2018 · Accra, Ghana · Wholly Ghanaian</div>
+      <h1>Innovative <em>Technology</em><br>Solutions for<br>Every Business</h1>
+      <p class="hero-tagline">GTHINK Company Limited delivers cutting-edge ICT solutions, digital transformation services, and business consultancy that meet and exceed stakeholder expectations.</p>
+      <div class="hero-btns">
+        <a href="#services" class="btn-gold">Explore Services</a>
+        <a href="#contact" class="btn-ghost">Contact Us</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-box"><span class="num">100+</span><span class="lbl">Clients Served</span></div>
+        <div class="stat-box"><span class="num">~10</span><span class="lbl">Years Operating</span></div>
+        <div class="stat-box"><span class="num">6+</span><span class="lbl">Service Areas</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="hero-tagrow">
+        <span class="tag">Technology (IT)</span>
+        <span class="tag">Tech Hub</span>
+        <span class="tag">Telecoms</span>
+        <span class="tag">Engineering</span>
+        <span class="tag">Business Services</span>
+        <span class="tag">Digital Innovations</span>
+        <span class="tag">Software Dev</span>
+        <span class="tag">Cloud & Security</span>
+        <span class="tag">Data Science & AI</span>
+        <span class="tag">ERP Systems</span>
+        <span class="tag">Graphic Design</span>
+        <span class="tag">Digital Media</span>
+      </div>
+    </div>
+    <div class="hero-tagrow"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <div class="sec-label">Who We Are</div>
+        <h2 class="sec-title">Building Ghana's<br>Digital Future</h2>
+        <p>GTHINK Company Limited is a wholly Ghanaian technology solution company established and registered in 2018. We provide innovative, excellent, professional and cutting-edge Information and Communication Technology solutions, products and services.</p>
+        <p>We support digital transformation and deliver Business Consultancy services that meet and exceed customers' and stakeholders' expectations — serving businesses of all sizes, institutions, and individuals across Ghana and beyond.</p>
+        <div style="display:flex;gap:16px;margin-top:28px;flex-wrap:wrap;">
+          <div style="padding:14px 20px;background:var(--light);border-radius:8px;border:1px solid var(--border);">
+            <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:4px;">Founded</div>
+            <div style="font-family:'Fraunces',serif;font-size:1.2rem;font-weight:600;color:var(--navy);">2018</div>
+          </div>
+          <div style="padding:14px 20px;background:var(--light);border-radius:8px;border:1px solid var(--border);">
+            <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:4px;">Location</div>
+            <div style="font-family:'Fraunces',serif;font-size:1.2rem;font-weight:600;color:var(--navy);">Accra, Ghana</div>
+          </div>
+          <div style="padding:14px 20px;background:var(--light);border-radius:8px;border:1px solid var(--border);">
+            <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:4px;">Focus</div>
+            <div style="font-family:'Fraunces',serif;font-size:1.2rem;font-weight:600;color:var(--navy);">ICT Solutions</div>
+          </div>
+        </div>
+      </div>
+      <div class="vmc-cards reveal">
+        <div class="vmc-card">
+          <h3>Our Vision</h3>
+          <p>"To be recognized as leaders in quality and customized delivery of Information Technology Solutions and Services to small, medium and large sized businesses, and individuals, and a preferred choice for our clients and staff."</p>
+        </div>
+        <div class="vmc-card">
+          <h3>Our Mission</h3>
+          <p>"We exist to provide excellent Information Technology solutions and services to globally position technology and business industries in addressing sustainability challenges, using innovative business approaches."</p>
+        </div>
+        <div class="vmc-card">
+          <h3>Our Commitment</h3>
+          <p>We are dedicated to delivering results-oriented, innovative and excellent solutions that empower our clients to achieve their goals through technology and digital transformation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE VALUES -->
+<section id="values">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-label">What Drives Us</div>
+      <h2 class="sec-title">Our Core Values</h2>
+      <p class="sec-sub">The principles that guide every solution we deliver, every relationship we build, and every commitment we make.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <div class="value-num">01</div>
+        <p><strong style="color:var(--navy);">Character, Care, Consistency</strong> and Passion to Deliver</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-num">02</div>
+        <p><strong style="color:var(--navy);">Excellence and Standard</strong> above the Norm</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-num">03</div>
+        <p><strong style="color:var(--navy);">Professionalism, Communication,</strong> Trust and Teamwork</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-num">04</div>
+        <p><strong style="color:var(--navy);">Innovation with Purpose,</strong> Thinking Generational and Potential to Deliver</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-num">05</div>
+        <p><strong style="color:var(--navy);">Integrity, Honesty,</strong> Transparency and Accountability</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-label">What We Offer</div>
+      <h2 class="sec-title">Solutions, Products &amp; Services</h2>
+      <p class="sec-sub">A comprehensive suite of technology and digital services tailored to drive your business forward.</p>
+    </div>
+
+    <!-- Creative Design -->
+    <div class="svc-category reveal">
+      <div class="svc-cat-header">
+        <div class="svc-cat-icon" style="background:#eeedfe;">🎨</div>
+        <div>
+          <div class="svc-cat-title">Creative (Graphic) Design &amp; Branding</div>
+          <div class="svc-cat-sub">Visual identity and brand development</div>
+        </div>
+      </div>
+      <div class="svc-items">
+        <div class="svc-item">Logo, Letterhead &amp; Business Cards Design</div>
+        <div class="svc-item">Flyers, Posters, Brochure &amp; Banners</div>
+        <div class="svc-item">Corporate &amp; Commercial Creative Designs</div>
+        <div class="svc-item">Brand Identity &amp; Brand Elements</div>
+        <div class="svc-item">Brand Design, Support &amp; Management</div>
+        <div class="svc-item">Print Designs &amp; More</div>
+      </div>
+    </div>
+
+    <!-- Printing -->
+    <div class="svc-category reveal">
+      <div class="svc-cat-header">
+        <div class="svc-cat-icon" style="background:#faeeda;">🖨️</div>
+        <div>
+          <div class="svc-cat-title">Printing Services</div>
+          <div class="svc-cat-sub">Full-range printing and signage solutions</div>
+        </div>
+      </div>
+      <div class="svc-items">
+        <div class="svc-item">Posters, Stickers, Flyers &amp; Cards</div>
+        <div class="svc-item">Books, Manuals &amp; Magazines</div>
+        <div class="svc-item">Banners, Backdrops &amp; Billboards</div>
+        <div class="svc-item">2D &amp; 3D Printing and Signage</div>
+        <div class="svc-item">Vehicle Branding</div>
+        <div class="svc-item">T-shirts, Branded Items &amp; Souvenirs</div>
+        <div class="svc-item">Packaging Bags &amp; More</div>
+      </div>
+    </div>
+
+    <!-- Tech Hub -->
+    <div class="svc-category reveal">
+      <div class="svc-cat-header">
+        <div class="svc-cat-icon" style="background:#e6f1fb;">🖥️</div>
+        <div>
+          <div class="svc-cat-title">Tech Hub</div>
+          <div class="svc-cat-sub">Technology devices and products sales</div>
+        </div>
+      </div>
+      <div class="svc-items">
+        <div class="svc-item">Tech Gadgets &amp; Devices</div>
+        <div class="svc-item">Computers &amp; Laptops</div>
+        <div class="svc-item">Electronics &amp; Phones</div>
+        <div class="svc-item">Accessories &amp; Peripherals</div>
+      </div>
+    </div>
+
+    <!-- Digital Media -->
+    <div class="svc-category reveal">
+      <div class="svc-cat-header">
+        <div class="svc-cat-icon" style="background:#e1f5ee;">📸</div>
+        <div>
+          <div class="svc-cat-title">Digital Media &amp; Communication</div>
+          <div class="svc-cat-sub">Media production and digital campaigns</div>
+        </div>
+      </div>
+      <div class="svc-items">
+        <div class="svc-item">Photography &amp; Videography Services</div>
+        <div class="svc-item">Motion Graphics</div>
+        <div class="svc-item">Bulk SMS &amp; Digital Communication</div>
+        <div class="svc-item">Digital Marketing &amp; Social Media Management</div>
+      </div>
+    </div>
+
+    <!-- IT Solutions -->
+    <div class="svc-category reveal">
+      <div class="svc-cat-header">
+        <div class="svc-cat-icon" style="background:#0a1628;">💻</div>
+        <div>
+          <div class="svc-cat-title" style="color:#fff;">Technology (IT) Solutions, Products &amp; Services</div>
+          <div class="svc-cat-sub">End-to-end IT development and managed services</div>
+        </div>
+      </div>
+      <div class="it-grid">
+        <div class="it-item">Software Engineering &amp; Development</div>
+        <div class="it-item">Mobile App Development &amp; Management</div>
+        <div class="it-item">Web App &amp; Website Development</div>
+        <div class="it-item">Hardware Engineering</div>
+        <div class="it-item">IT Infrastructure &amp; Management</div>
+        <div class="it-item">Networking &amp; Cloud Services</div>
+        <div class="it-item">IT Security &amp; System Integration</div>
+        <div class="it-item">Data Science, IoT &amp; AI</div>
+        <div class="it-item">IT Support &amp; Managed Services</div>
+        <div class="it-item">Connectivity &amp; Security</div>
+        <div class="it-item">Training &amp; Consultancy</div>
+        <div class="it-item">Telecom Essentials</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INNOVATIONS -->
+<section id="innovations">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-label gold">Digital Innovations</div>
+      <h2 class="sec-title white">Tech – Digital Innovations</h2>
+      <p class="sec-sub" style="color:rgba(255,255,255,0.5);">Designing, developing and deploying innovative digital solutions, systems, platforms and products that transform how businesses operate.</p>
+    </div>
+    <div class="innov-grid">
+      <div class="innov-card reveal">
+        <h3>🏨 Hotel Management System</h3>
+        <p>Comprehensive hotel management platform covering reservations, front desk, housekeeping, billing and reporting — the GTHINK HMS (G-HMS).</p>
+      </div>
+      <div class="innov-card reveal">
+        <h3>🏢 Enterprise Management Systems</h3>
+        <p>Full-featured ERP solutions managing stock/inventory, point of sales, finance, human resources and general operations seamlessly.</p>
+      </div>
+      <div class="innov-card reveal">
+        <h3>📱 Custom Platforms &amp; Portals</h3>
+        <p>Bespoke digital platforms, web portals, and mobile applications built specifically to match your business processes and goals.</p>
+      </div>
+      <div class="innov-card reveal">
+        <h3>⚙️ IT Management Systems</h3>
+        <p>Robust IT management and managed services platforms to monitor, control and optimize your entire technology infrastructure.</p>
+      </div>
+      <div class="innov-card reveal">
+        <h3>🌐 Digital Solutions &amp; Technologies</h3>
+        <p>Innovative digital technologies, systems and products designed to address real business challenges and drive long-term growth.</p>
+      </div>
+      <div class="innov-card reveal">
+        <h3>🚀 Deployable Products</h3>
+        <p>Ready-to-deploy and custom-built tech products tailored to your sector — from startups to large enterprises and institutions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY GTHINK -->
+<section id="why">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-label">Our Advantage</div>
+      <h2 class="sec-title">Why Work With GTHINK?</h2>
+      <p class="sec-sub">We offer more than just service — we deliver innovative, excellent, results-oriented solutions that make a real difference.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-num">01</div>
+        <div>
+          <h4>Customized Business Solutions</h4>
+          <p>We provide products and services specifically designed to meet the unique needs of each client — no generic, one-size-fits-all approaches.</p>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">02</div>
+        <div>
+          <h4>Quality &amp; Reliability</h4>
+          <p>We are dedicated to providing consistently excellent service, on-time delivery and high standards that you can rely on every single time.</p>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">03</div>
+        <div>
+          <h4>Experienced &amp; Professional Team</h4>
+          <p>Our team consists of skilled professionals experienced in technology, design and digital systems who work collaboratively to achieve high-quality results.</p>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">04</div>
+        <div>
+          <h4>Innovation with Purpose</h4>
+          <p>We concentrate on practical and flexible solutions that solve real business problems and support long-term growth — innovation that truly matters.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-label gold">Get Started</div>
+      <h2 class="sec-title white">Let's Work Together</h2>
+      <p class="sec-sub" style="color:rgba(255,255,255,0.5);">Ready to transform your business with technology? Reach out to discuss your needs and how GTHINK can help.</p>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="contact-info">
+        <h3>Contact Details</h3>
+        <div class="contact-row">
+          <div class="c-icon">📍</div>
+          <div>
+            <span class="label">Location</span>
+            <strong>Asheley Botwe School Junction (Nmai Dzorn Road), Accra, Ghana</strong>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon">📞</div>
+          <div>
+            <span class="label">Phone</span>
+            <a href="tel:+233241550366">+233 (0) 241 550 366</a><br>
+            <a href="tel:+233256791600">+233 (0) 256 791 600</a><br>
+            <a href="tel:+233303957042">+233 (0) 303 957 042</a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon">✉️</div>
+          <div>
+            <span class="label">Email</span>
+            <a href="mailto:gthinkcompanylimited@gmail.com">gthinkcompanylimited@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon">🌐</div>
+          <div>
+            <span class="label">Website</span>
+            <a href="http://www.gthinkgroup.com" target="_blank">www.gthinkgroup.com</a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon">📦</div>
+          <div>
+            <span class="label">P.O. Box</span>
+            <strong>CT 6214, Cantonments, Accra, Ghana</strong>
+          </div>
+        </div>
+      </div>
+      <div class="ceo-box reveal">
+        <h3>Solomon Owuraku Ashia</h3>
+        <div class="role">Chief Executive Officer</div>
+        <p>We are excited about the opportunity to support your business and contribute to its success through reliable and professional IT services. We would be happy to further discuss and customize a package that best suits your needs.</p>
+        <div class="ceo-btns">
+          <a href="mailto:ashiasolomon@gmail.com" class="btn-gold">Email CEO</a>
+          <a href="mailto:gthinkcompanylimited@gmail.com" class="btn-ghost">General Enquiry</a>
+        </div>
+        <div style="margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.08);">
+          <p style="font-size:0.82rem;color:rgba(255,255,255,0.3);font-style:italic;">Sign up to our IT Support Services and Go Digital with GTHINK</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© GTHINK Company Limited 2026. All rights reserved.</p>
+      <div class="footer-tags">
+        <span class="footer-tag">Technology (IT)</span>
+        <span class="footer-tag">Tech Hub</span>
+        <span class="footer-tag">Telecoms</span>
+        <span class="footer-tag">Engineering</span>
+        <span class="footer-tag">Business Services</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// Scroll reveal
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 70);
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// Active nav
+window.addEventListener('scroll', () => {
+  let cur = '';
+  document.querySelectorAll('section[id]').forEach(s => {
+    if (window.scrollY >= s.offsetTop - 120) cur = s.id;
+  });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--gold)' : '';
+  });
+});
+</script>
+</body>
+</html>
