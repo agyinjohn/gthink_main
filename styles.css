@@ -261,7 +261,7 @@ section{padding:96px 0;}
   
 }
 .innov-banner-img{
-  width:140%;height:100%;
+  width:160%;height:100%;
   object-fit:cover;display:block;
 }
 .innov-banner-overlay{
@@ -584,9 +584,9 @@ section{padding:96px 0;}
 
 /* ── HERO PNG IMAGE ── */
 .hero-img{
-  width:140%;
+  width:160%;
   height:auto;
-  max-width:140%;
+  max-width:160%;
   object-fit:contain;
   display:block;
   image-rendering:-webkit-optimize-contrast;
