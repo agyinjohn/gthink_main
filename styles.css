@@ -636,3 +636,9 @@ section{padding:96px 0;}
   100%{transform:translateX(-50%);}
 }
 .svc-ticker:hover .svc-ticker-track{animation-play-state:paused;}
+
+/* ── CONTACT ICONS ── */
+.c-icon i, .fc-icon i{
+  font-size:0.85rem;
+  color:var(--accent);
+}
