@@ -35,6 +35,9 @@
     <li><a href="#team">Our Team</a></li>
   </ul>
   <a href="#contact" class="nav-cta">Get in Touch</a>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <!-- HERO -->
@@ -171,10 +174,9 @@
     <!-- IT Solutions (Tech - Digital Solutions) -->
     <div class="svc-category reveal">
       <div class="svc-cat-header">
-        <div class="svc-cat-icon" style="background:#0a1628;">💻</div>
+        <div class="svc-cat-icon" style="background:#0a1628;"><i class="fas fa-laptop-code" style="color:#fff;"></i></div>
         <div>
-          <div class="svc-cat-title" style="color:#fff;">Technology (IT) Solutions, Products &amp; Services</div>
-          <div class="svc-cat-sub" style="color:var(--gold);font-weight:600;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.06em;">Tech – Digital Solutions</div>
+          <div class="svc-cat-title">Tech – Digital Solutions</div>
           <div class="svc-cat-sub">End-to-end IT development and managed services</div>
         </div>
       </div>
@@ -197,7 +199,7 @@
     <!-- Creative Design -->
     <div class="svc-category reveal">
       <div class="svc-cat-header">
-        <div class="svc-cat-icon" style="background:#eeedfe;">🎨</div>
+        <div class="svc-cat-icon" style="background:#eeedfe;"><i class="fas fa-paint-brush" style="color:#7c6fcd;"></i></div>
         <div>
           <div class="svc-cat-title">Creative (Graphic) Design &amp; Branding</div>
           <div class="svc-cat-sub">Visual identity and brand development</div>
@@ -216,7 +218,7 @@
     <!-- Printing -->
     <div class="svc-category reveal">
       <div class="svc-cat-header">
-        <div class="svc-cat-icon" style="background:#faeeda;">🖨️</div>
+        <div class="svc-cat-icon" style="background:#faeeda;"><i class="fas fa-print" style="color:#d4820a;"></i></div>
         <div>
           <div class="svc-cat-title">Printing Services</div>
           <div class="svc-cat-sub">Full-range printing and signage solutions</div>
@@ -236,7 +238,7 @@
     <!-- Digital Media -->
     <div class="svc-category reveal">
       <div class="svc-cat-header">
-        <div class="svc-cat-icon" style="background:#e1f5ee;">📸</div>
+        <div class="svc-cat-icon" style="background:#e1f5ee;"><i class="fas fa-photo-video" style="color:#1a9e6e;"></i></div>
         <div>
           <div class="svc-cat-title">Digital Media &amp; Communication</div>
           <div class="svc-cat-sub">Media production and digital campaigns</div>
@@ -253,7 +255,7 @@
     <!-- Tech Hub -->
     <div class="svc-category reveal">
       <div class="svc-cat-header">
-        <div class="svc-cat-icon" style="background:#e6f1fb;">🖥️</div>
+        <div class="svc-cat-icon" style="background:#e6f1fb;"><i class="fas fa-desktop" style="color:#2a7de1;"></i></div>
         <div>
           <div class="svc-cat-title">Tech Hub &amp; Essentials</div>
           <div class="svc-cat-sub">Technology devices and products sales</div>
@@ -270,7 +272,7 @@
     <!-- Digital Innovations (link to section) -->
     <div class="svc-category reveal">
       <div class="svc-cat-header" style="border-bottom-color:rgba(42,125,225,0.2);">
-        <div class="svc-cat-icon" style="background:var(--navy);">🚀</div>
+        <div class="svc-cat-icon" style="background:var(--navy);"><i class="fas fa-rocket" style="color:var(--gold);"></i></div>
         <div style="flex:1;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
           <div>
             <div class="svc-cat-title" style="color:var(--navy);">Tech – Digital Innovations</div>
@@ -304,7 +306,7 @@
         <p>Comprehensive hotel management platform covering reservations, front desk, housekeeping, billing and reporting — the GTHINK HMS (G-HMS).</p>
       </div>
       <div class="innov-card reveal">
-        <h3>🔒 GTHINK Smart &amp; Security Systems</h3>
+        <h3><i class="fas fa-lock" style="color:var(--gold);margin-right:8px;"></i>Smart &amp; Security Systems</h3>
         <p>Innovative and advanced smart security solutions designed for homes, hotels, apartments, offices, and commercial facilities — featuring the GTHINK Locking System (GLS) and other intelligent security and smart technologies.</p>
       </div>
       <div class="innov-card reveal">
@@ -400,7 +402,7 @@
     <div class="team-roles-grid reveal">
       <div class="team-role-card">
         <div class="team-role-icon">💼</div>
-        <div class="team-role-label">Business Managers</div>
+        <div class="team-role-label">Business Managers &amp; Developers</div>
       </div>
       <div class="team-role-card">
         <div class="team-role-icon">📊</div>
@@ -580,5 +582,15 @@
 </footer>
 
 <script src="main.js" defer></script>
+
+<!-- FLOATING BUTTONS -->
+<div class="floating-btns">
+  <a href="https://wa.me/233241550366" target="_blank" class="float-btn float-whatsapp" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <button class="float-btn float-top" id="back-to-top" title="Back to Top" aria-label="Back to Top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+</div></script>
 </body>
 </html>
