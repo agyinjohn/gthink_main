@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GTHINK Company Limited — Business Profile</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="styles.css">
   --navy:   #0a1628;
   --navy2:  #0f2040;
@@ -23,8 +24,7 @@
 <!-- NAV -->
 <nav>
   <div class="nav-logo">
-    <div class="nav-mark">G</div>
-    <div class="nav-name">G<span>THINK</span> <span style="color:rgba(255,255,255,0.3);font-weight:300;font-size:0.85rem;margin-left:4px">Company Limited</span></div>
+    <div class="nav-name"><span style="color:rgb(21,72,100);">G</span><span style="color:rgb(234,244,248);">THINK</span> <span style="color:rgba(255,255,255,0.3);font-weight:300;font-size:0.85rem;margin-left:4px">Company Limited</span></div>
   </div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
@@ -58,22 +58,14 @@
       </div>
     </div>
     <div>
-      <div class="hero-tagrow">
-        <span class="tag">Technology (IT)</span>
-        <span class="tag">Tech Hub</span>
-        <span class="tag">Telecoms</span>
-        <span class="tag">Engineering</span>
-        <span class="tag">Business Services</span>
-        <span class="tag">Digital Innovations</span>
-        <span class="tag">Software Dev</span>
-        <span class="tag">Cloud & Security</span>
-        <span class="tag">Data Science & AI</span>
-        <span class="tag">ERP Systems</span>
-        <span class="tag">Graphic Design</span>
-        <span class="tag">Digital Media</span>
+      <div class="hero-img-wrap">
+        <img
+          src="img/siG.png"
+          alt="GTHINK Technology Solutions"
+          class="hero-img"
+        >
       </div>
     </div>
-    <div class="hero-tagrow"></div>
   </div>
 </section>
 
@@ -86,6 +78,14 @@
         <h2 class="sec-title">Building Ghana's<br>Digital Future</h2>
         <p>GTHINK Company Limited is a wholly Ghanaian technology solutions provider established and registered in 2018. We provide innovative, excellent, professional and cutting-edge Technology Solutions, products and services.</p>
         <p>We support digital transformation and deliver Business Consultancy services that meet and exceed customers' and stakeholders' expectations — serving businesses of all sizes, institutions, and individuals across Ghana and beyond.</p>
+        <div class="we-serve">
+          <span class="we-serve-label">We Serve</span>
+          <span class="serve-tag">Businesses</span>
+          <span class="serve-tag">Enterprises</span>
+          <span class="serve-tag">Institutions</span>
+          <span class="serve-tag">Organizations</span>
+          <span class="serve-tag">Individuals</span>
+        </div>
         <div style="display:flex;gap:16px;margin-top:28px;flex-wrap:wrap;">
           <div style="padding:14px 20px;background:var(--light);border-radius:8px;border:1px solid var(--border);">
             <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:4px;">Founded</div>
@@ -130,11 +130,11 @@
     <div class="values-grid">
       <div class="value-card reveal">
         <div class="value-num">01</div>
-        <p><strong style="color:var(--navy);">Character, Care, Consistency</strong> and Passion to Deliver</p>
+        <p><strong style="color:var(--navy);">Innovation with Purpose,</strong> <em style="color:var(--accent);font-style:italic;font-weight:600;">Thinking Generational</em> and Potential to Deliver</p>
       </div>
       <div class="value-card reveal">
         <div class="value-num">02</div>
-        <p><strong style="color:var(--navy);">Excellence and Standard</strong> above the Norm</p>
+        <p><strong style="color:var(--navy);">Integrity, Honesty,</strong> Transparency and Accountability</p>
       </div>
       <div class="value-card reveal">
         <div class="value-num">03</div>
@@ -142,11 +142,11 @@
       </div>
       <div class="value-card reveal">
         <div class="value-num">04</div>
-        <p><strong style="color:var(--navy);">Innovation with Purpose,</strong> <em style="color:var(--accent);font-style:italic;font-weight:600;">Thinking Generational</em> and Potential to Deliver</p>
+        <p><strong style="color:var(--navy);">Character, Care, Consistency</strong> and Passion to Deliver</p>
       </div>
       <div class="value-card reveal">
         <div class="value-num">05</div>
-        <p><strong style="color:var(--navy);">Integrity, Honesty,</strong> Transparency and Accountability</p>
+        <p><strong style="color:var(--navy);">Excellence and Standard</strong> above the Norm</p>
       </div>
     </div>
   </div>
@@ -159,6 +159,13 @@
       <div class="sec-label">What We Offer</div>
       <h2 class="sec-title">Solutions, Products &amp; Services</h2>
       <p class="sec-sub">A comprehensive suite of technology and digital services tailored to drive your business forward.</p>
+    </div>
+
+    <div class="svc-ticker">
+      <div class="svc-ticker-track">
+        <span>Technology (IT)</span><span>Tech Hub</span><span>Telecoms</span><span>Engineering</span><span>Business Services</span><span>Digital Innovations</span><span>Software Dev</span><span>Cloud &amp; Security</span><span>Data Science &amp; AI</span><span>ERP Systems</span><span>Graphic Design</span><span>Digital Media</span>
+        <span>Technology (IT)</span><span>Tech Hub</span><span>Telecoms</span><span>Engineering</span><span>Business Services</span><span>Digital Innovations</span><span>Software Dev</span><span>Cloud &amp; Security</span><span>Data Science &amp; AI</span><span>ERP Systems</span><span>Graphic Design</span><span>Digital Media</span>
+      </div>
     </div>
 
     <!-- IT Solutions (Tech - Digital Solutions) -->
@@ -278,12 +285,15 @@
 
 <!-- INNOVATIONS -->
 <section id="innovations">
-  <div class="container">
-    <div class="sec-header reveal">
+  <div class="innov-banner">
+    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&q=80&auto=format&fit=crop" alt="Digital Innovation" class="innov-banner-img">
+    <div class="innov-banner-overlay">
       <div class="sec-label gold">Digital Innovations</div>
-      <h2 class="sec-title white">Tech – Digital Innovations</h2>
-      <p class="sec-sub" style="color:rgba(255,255,255,0.5);">Designing, developing and deploying innovative digital solutions, systems, platforms and products that transform how businesses operate.</p>
+      <h2 class="sec-title white" style="margin-bottom:12px;">Tech – Digital Innovations</h2>
+      <p style="color:rgba(255,255,255,0.7);font-size:1rem;font-weight:300;max-width:560px;line-height:1.7;">Designing, developing and deploying innovative digital solutions, systems, platforms and products that transform how businesses operate.</p>
     </div>
+  </div>
+  <div class="container" style="padding-top:52px;">
     <div class="innov-grid">
       <div class="innov-card reveal">
         <h3>🏢 Enterprise Management Systems</h3>
@@ -294,8 +304,8 @@
         <p>Comprehensive hotel management platform covering reservations, front desk, housekeeping, billing and reporting — the GTHINK HMS (G-HMS).</p>
       </div>
       <div class="innov-card reveal">
-        <h3>🔒 GTHINK Locking System (GLS)</h3>
-        <p>An innovative and advanced smart security locking solution designed to provide modern, reliable, and convenient access control for homes, hotels, apartments, offices, and commercial spaces — securing premises, assets, and access points with cutting-edge digital lock technology.</p>
+        <h3>🔒 GTHINK Smart &amp; Security Systems</h3>
+        <p>Innovative and advanced smart security solutions designed for homes, hotels, apartments, offices, and commercial facilities — featuring the GTHINK Locking System (GLS) and other intelligent security and smart technologies.</p>
       </div>
       <div class="innov-card reveal">
         <h3>📱 Custom Platforms &amp; Portals</h3>
@@ -303,7 +313,7 @@
       </div>
       <div class="innov-card reveal">
         <h3>⚙️ IT Management Systems</h3>
-        <p>Robust IT management and managed services platforms to monitor, control and optimize your entire technology infrastructure.</p>
+        <p>Robust IT management and managed services platforms to monitor, control and optimize your entire business operations and technology infrastructure.</p>
       </div>
       <div class="innov-card reveal">
         <h3>🌐 Digital Solutions &amp; Technologies</h3>
@@ -370,9 +380,9 @@
     <div class="team-lead-box reveal">
       <div class="team-lead-avatar">SOA</div>
       <div class="team-lead-info">
-        <div class="team-lead-badge">Team Lead &amp; CEO</div>
+        <div class="team-lead-badge">Team Lead</div>
         <h3 class="team-lead-name">Solomon Owuraku Ashia</h3>
-        <p>Leading GTHINK with vision, purpose and a generational mindset — driving the team to deliver innovative, excellent and results-oriented technology solutions that empower businesses and institutions across Ghana and beyond.</p>
+        <p>Leading GTHINK with vision, purpose, potential, and a generational thinking mindset — driving the team to deliver innovative, excellent and results-oriented technology solutions that empower businesses and institutions across Ghana and beyond.</p>
       </div>
     </div>
 
@@ -389,6 +399,14 @@
 
     <div class="team-roles-grid reveal">
       <div class="team-role-card">
+        <div class="team-role-icon">💼</div>
+        <div class="team-role-label">Business Managers</div>
+      </div>
+      <div class="team-role-card">
+        <div class="team-role-icon">📊</div>
+        <div class="team-role-label">Project Managers</div>
+      </div>
+      <div class="team-role-card">
         <div class="team-role-icon">💻</div>
         <div class="team-role-label">Software Engineers</div>
       </div>
@@ -398,23 +416,15 @@
       </div>
       <div class="team-role-card">
         <div class="team-role-icon">🎨</div>
-        <div class="team-role-label">Creative Designers</div>
-      </div>
-      <div class="team-role-card">
-        <div class="team-role-icon">📸</div>
-        <div class="team-role-label">Digital Media Professionals</div>
+        <div class="team-role-label">Branding &amp; Creative Designers</div>
       </div>
       <div class="team-role-card">
         <div class="team-role-icon">🛠️</div>
         <div class="team-role-label">IT Support Professionals</div>
       </div>
       <div class="team-role-card">
-        <div class="team-role-icon">📊</div>
-        <div class="team-role-label">Project Managers</div>
-      </div>
-      <div class="team-role-card">
-        <div class="team-role-icon">🤝</div>
-        <div class="team-role-label">Business Developers</div>
+        <div class="team-role-icon">📸</div>
+        <div class="team-role-label">Digital Media Professionals</div>
       </div>
       <div class="team-role-card">
         <div class="team-role-icon">🌍</div>
@@ -480,7 +490,8 @@
       <div class="ceo-box reveal">
         <h3>Solomon Owuraku Ashia</h3>
         <div class="role">Chief Executive Officer</div>
-        <p>We are excited about the opportunity to support your business and contribute to its success through reliable and professional IT services. We would be happy to further discuss and customize a package that best suits your needs.</p>
+        <p>We are excited about the opportunity to support your business and contribute to its success through reliable and professional IT services.</p>
+        <p>We can schedule a demo to showcase our portfolio and work delivered to clients. We would be happy to further discuss and customize a package that best suits your business needs and goals.</p>
         <div class="ceo-btns">
           <a href="mailto:ashiasolomon@gmail.com" class="btn-gold">Email CEO</a>
           <a href="mailto:gthinkcompanylimited@gmail.com" class="btn-ghost">General Enquiry</a>
@@ -490,18 +501,83 @@
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© GTHINK Company Limited 2026. All rights reserved.</p>
-      <div class="footer-tags">
-        <span class="footer-tag">Technology (IT)</span>
-        <span class="footer-tag">Tech Hub</span>
-        <span class="footer-tag">Telecoms</span>
-        <span class="footer-tag">Engineering</span>
-        <span class="footer-tag">Business Services</span>
-      </div>
+    <div class="contact-map" style="margin-bottom:40px;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.2181074080477!2d-0.12939909999999996!3d5.6815838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf83003a1f14e9%3A0xae9b05d357954d11!2sGTHINK%20Group!5e0!3m2!1sen!2sgh!4v1774712092375!5m2!1sen!2sgh"
+        width="100%"
+        height="380"
+        style="border:0;border-radius:12px;display:block;"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="GTHINK Location"
+      ></iframe>
     </div>
   </div>
 </section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-name"><span style="color:rgb(21,72,100);">G</span><span style="color:rgb(234,244,248);">THINK</span> <span style="color:rgba(255,255,255,0.3);font-weight:300;font-size:0.85rem;">Company Limited</span></div>
+        </div>
+        <p class="footer-tagline">Ghana's Technology Solutions Provider — delivering innovative, professional and cutting-edge technology solutions since 2018.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/share/1DkjiyTDzC/" target="_blank" class="footer-social" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/gthink_company_ltd" target="_blank" class="footer-social" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:gthinkcompanylimited@gmail.com" class="footer-social" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="tel:+233241550366" class="footer-social" title="Call"><i class="fas fa-phone"></i></a>
+          <a href="http://www.gthinkgroup.com" target="_blank" class="footer-social" title="Website"><i class="fas fa-globe"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#values">Core Values</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#innovations">Digital Innovations</a></li>
+          <li><a href="#why">Why GTHINK</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Tech – Digital Solutions</a></li>
+          <li><a href="#services">Creative &amp; Graphic Design</a></li>
+          <li><a href="#services">Printing Services</a></li>
+          <li><a href="#services">Digital Media &amp; Communication</a></li>
+          <li><a href="#services">Tech Hub &amp; Essentials</a></li>
+          <li><a href="#innovations">Digital Innovations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Contact Us</h4>
+        <ul class="footer-contact-list">
+          <li><span class="fc-icon">📍</span><span>Asheley Botwe School Junction (Nmai Dzorn Road), Accra, Ghana</span></li>
+          <li><span class="fc-icon">📞</span><span><a href="tel:+233241550366">+233 (0) 241 550 366</a><br><a href="tel:+233256791600">+233 (0) 256 791 600</a></span></li>
+          <li><span class="fc-icon">✉️</span><span><a href="mailto:gthinkcompanylimited@gmail.com">gthinkcompanylimited@gmail.com</a></span></li>
+          <li><span class="fc-icon">🌐</span><span><a href="http://www.gthinkgroup.com" target="_blank">www.gthinkgroup.com</a></span></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom-bar">
+      <p>&copy; 2026 GTHINK Company Limited. All rights reserved.</p>
+      <p class="footer-bottom-right">Wholly Ghanaian &middot; Est. 2018 &middot; Accra, Ghana</p>
+    </div>
+  </div>
+</footer>
 
 <script src="main.js" defer></script>
 </body>
