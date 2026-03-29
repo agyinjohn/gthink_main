@@ -444,7 +444,8 @@ section{padding:96px 0;}
 }
 
 @media(max-width:768px){
-  .team-lead-box{flex-direction:column;gap:20px;padding:28px 24px;}
+  .team-lead-box{flex-direction:row;gap:16px;padding:28px 24px;}
+  .team-lead-name{font-size:1.1rem;}
   .team-about{grid-template-columns:1fr;}
   .team-closing{padding:24px;}
 }
@@ -679,7 +680,8 @@ section{padding:96px 0;}
   .why-grid{grid-template-columns:1fr;}
 
   /* Team */
-  .team-lead-box{flex-direction:column;gap:20px;padding:28px 24px;}
+  .team-lead-box{flex-direction:row;gap:16px;padding:28px 24px;}
+  .team-lead-name{font-size:1.1rem;}
   .team-about{grid-template-columns:1fr;}
   .team-roles-grid{grid-template-columns:repeat(2,1fr);}
 
