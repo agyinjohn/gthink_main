@@ -229,7 +229,7 @@ section{padding:96px 0;}
   display:flex;align-items:center;justify-content:center;
   font-size:1.4rem;flex-shrink:0;
 }
-.svc-cat-title{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:600;color:var(--navy);}
+.svc-cat-title{font-family:'Fraunces',serif;font-size:1.05rem;font-weight:600;color:var(--navy);}
 .svc-cat-sub{font-size:0.85rem;color:var(--muted);margin-top:2px;}
 .svc-items{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;}
 .svc-item{
@@ -708,7 +708,7 @@ section{padding:96px 0;}
   /* Services */
   .svc-items{grid-template-columns:1fr;}
   .it-grid{grid-template-columns:1fr;}
-  .svc-cat-header{flex-wrap:wrap;}
+  .svc-cat-header{flex-wrap:nowrap;align-items:center;}
 
   /* Innovations */
   .innov-grid{grid-template-columns:1fr;}
