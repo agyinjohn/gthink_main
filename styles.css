@@ -382,11 +382,11 @@ section{padding:96px 0;}
   background:rgba(232,160,32,0.12);border:1px solid rgba(232,160,32,0.3);
   color:var(--gold);font-size:0.7rem;font-weight:700;
   text-transform:uppercase;letter-spacing:0.1em;
-  padding:4px 12px;margin-bottom:10px;
+  padding:4px 12px;margin-bottom:14px;
 }
 .team-lead-name{
   font-family:'Fraunces',serif;font-size:1.5rem;font-weight:700;
-  color:var(--navy);margin-bottom:12px;
+  color:var(--navy);margin-bottom:6px;
 }
 .team-lead-info p{color:var(--muted);font-size:0.94rem;line-height:1.75;font-weight:300;}
 
@@ -719,7 +719,6 @@ section{padding:96px 0;}
 
   /* Contact */
   .ceo-box{padding:24px;}
-  .ceo-btns{flex-direction:column;}
 
   /* Footer */
   .footer-grid{grid-template-columns:1fr;}
@@ -746,7 +745,6 @@ section{padding:96px 0;}
   .hero h1{font-size:1.7rem;}
   .hero-stats{grid-template-columns:1fr;}
   .team-roles-grid{grid-template-columns:1fr;}
-  .btn-gold,.btn-ghost{width:100%;text-align:center;}
 }
 
 /* ── MOBILE NAV ── */
