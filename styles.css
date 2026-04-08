@@ -802,6 +802,14 @@ section{padding:96px 0;}
   transition:all 0.3s;
 }
 .float-btn:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,0.3);}
+.float-call{
+  background:var(--accent);color:#fff;
+  display:none;
+}
+.float-call:hover{background:#1e6fd0;}
+@media(max-width:768px){
+  .float-call{display:flex;}
+}
 .float-whatsapp{background:#25D366;color:#fff;}
 .float-whatsapp:hover{background:#1ebe5d;}
 .float-top{
